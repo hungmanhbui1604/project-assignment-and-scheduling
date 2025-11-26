@@ -181,6 +181,46 @@ Both algorithms include a 270-second time limit (4.5 minutes) to ensure reasonab
     └── problem3.png
 ```
 
+## Performance Metrics Calculator
+
+A separate utility [`calculate_metrics.py`](calculate_metrics.py) is provided to analyze the performance of algorithm outputs:
+
+### Usage
+
+```bash
+# First generate output from an algorithm
+python aco.py < input.txt > aco_output.txt
+# or
+python pso.py < input.txt > pso_output.txt
+
+# Then calculate metrics
+python calculate_metrics.py input.txt aco_output.txt
+# or
+python calculate_metrics.py input.txt pso_output.txt
+```
+
+### Metrics Calculated
+
+The utility calculates three key performance metrics:
+
+1. **Number of tasks scheduled** - Count of successfully assigned tasks
+2. **Completion time (makespan)** - Maximum finish time across all scheduled tasks
+3. **Total cost** - Sum of costs for all task-team assignments
+
+### Example Output
+
+```
+==================================================
+SCHEDULING METRICS
+==================================================
+Number of tasks scheduled: 95
+Completion time (makespan): 1250
+Total cost: 87500
+==================================================
+```
+
+This allows you to easily compare the performance of different algorithms on the same problem instance by running each algorithm and then analyzing their outputs with the metrics calculator.
+
 ## References
 
 - Particle Swarm Optimization: Kennedy, J., & Eberhart, R. (1995). "Particle swarm optimization"
