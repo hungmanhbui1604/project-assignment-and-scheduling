@@ -108,9 +108,9 @@ i j u                  # R lines: task i assigned to team j starting at time u
 
 - `SWARM_SIZE = 50`: Number of particles in the swarm
 - `MAX_ITERATIONS = 150`: Maximum number of iterations
-- `W = 0.729`: Inertia weight
-- `C1 = 1.49445`: Cognitive coefficient
-- `C2 = 1.49445`: Social coefficient
+- `W = 0.75`: Inertia weight
+- `C1 = 1.5`: Cognitive coefficient
+- `C2 = 1.5`: Social coefficient
 - `TIME_LIMIT = 270.0`: Maximum execution time in seconds
 
 ### ACO Parameters (in [`aco.py`](aco.py))
@@ -175,11 +175,126 @@ Both algorithms include a 270-second time limit (4.5 minutes) to ensure reasonab
 ├── input.txt           # Example input file
 ├── pso.py              # Particle Swarm Optimization implementation
 ├── aco.py              # Ant Colony Optimization implementation
+├── quick_tuner.py      # Hyperparameter tuning utility
+├── calculate_metrics.py # Performance metrics calculator
 └── problem/            # Directory with problem illustrations
     ├── problem1.png
     ├── problem2.png
     └── problem3.png
 ```
+
+## Hyperparameter Tuning Utility
+
+A comprehensive tuning utility [`quick_tuner.py`](quick_tuner.py) is provided to automatically find the best hyperparameters for both optimization algorithms:
+
+### Features
+
+- **Multi-algorithm support**: Tune ACO, PSO, or both algorithms simultaneously
+- **Automated parameter generation**: Tests diverse parameter combinations
+- **Performance comparison**: Ranks configurations by fitness score
+- **Detailed results**: Shows scheduled tasks, makespan, cost, and execution time
+- **Result persistence**: Saves all results to timestamped JSON files
+
+### Usage
+
+```bash
+# Tune both algorithms with default 15 configurations each
+python quick_tuner.py input.txt
+
+# Tune only ACO algorithm
+python quick_tuner.py input.txt aco
+
+# Tune only PSO algorithm with 20 configurations
+python quick_tuner.py input.txt pso 20
+
+# Tune both with 25 configurations each
+python quick_tuner.py input.txt both 25
+```
+
+### Parameter Ranges Tested
+
+**ACO Parameters:**
+- `alpha`: [0.5, 1.0, 1.5, 2.0] - Pheromone influence
+- `beta`: [1.0, 2.0, 3.0, 4.0] - Heuristic influence
+- `rho`: [0.05, 0.1, 0.2, 0.3] - Evaporation rate
+- `num_ants`: [10, 20, 30, 40, 50] - Number of ants
+- `iterations`: [50, 100, 150] - Maximum iterations
+- `q`: [500, 1000, 1500, 2000] - Pheromone deposit factor
+
+**PSO Parameters:**
+- `swarm_size`: [20, 30, 50, 70, 100] - Number of particles
+- `max_iterations`: [100, 150, 200] - Maximum iterations
+- `w`: [0.4, 0.6, 0.75, 0.8, 0.9] - Inertia weight
+- `c1`: [0.5, 1.0, 1.5, 2.0] - Cognitive coefficient
+- `c2`: [0.5, 1.0, 1.5, 2.0] - Social coefficient
+
+### Fitness Function
+
+The tuner uses a composite fitness function (lower is better):
+```
+fitness = (unscheduled_tasks × 1,000,000) + (makespan × 1,000) + total_cost
+```
+
+This prioritizes:
+1. **Maximizing scheduled tasks** (primary objective)
+2. **Minimizing completion time** (secondary objective)
+3. **Minimizing total cost** (tertiary objective)
+
+### Example Output
+
+```
+Quick Hyperparameter Tuning
+Input: input.txt
+Algorithm: both
+Configs per algorithm: 15
+Problem size: 100 tasks
+
+==================================================
+TESTING ACO ALGORITHM
+==================================================
+
+ACO Config 1/15: {'alpha': 1.0, 'beta': 2.0, 'rho': 0.1, 'num_ants': 20, 'iterations': 100, 'q': 1000}
+  ✅ Scheduled: 95/100
+     Makespan: 1250.0, Cost: 87500.0
+     Fitness: 5200000.0, Time: 45.2s
+
+...
+
+==================================================
+TOP 5 ACO CONFIGURATIONS
+==================================================
+
+1. Fitness: 5200000.0
+   Config: {'alpha': 1.5, 'beta': 3.0, 'rho': 0.05, 'num_ants': 30, 'iterations': 150, 'q': 1500}
+   Results: Scheduled 95/100, Makespan 1250.0, Cost 87500.0
+
+...
+
+==================================================
+ALGORITHM COMPARISON
+==================================================
+
+Best ACO:
+  Fitness: 5200000.0
+  Scheduled: 95/100
+  Config: {'alpha': 1.5, 'beta': 3.0, 'rho': 0.05, ...}
+
+Best PSO:
+  Fitness: 5300000.0
+  Scheduled: 94/100
+  Config: {'swarm_size': 50, 'max_iterations': 150, 'w': 0.75, ...}
+
+🏆 ACO performs better on this dataset!
+
+💾 Results saved to: tuning_results_1701234567.json
+```
+
+### Benefits
+
+- **Find optimal parameters** without manual trial-and-error
+- **Compare algorithms** objectively on your specific problem instance
+- **Save time** by identifying the best configuration quickly
+- **Reproducible results** with saved parameter sets and performance metrics
 
 ## Performance Metrics Calculator
 

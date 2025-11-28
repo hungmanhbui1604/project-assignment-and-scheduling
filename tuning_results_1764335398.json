@@ -1,0 +1,731 @@
+{
+  "aco": [
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 3.0,
+        "rho": 0.1,
+        "num_ants": 40,
+        "iterations": 100,
+        "q": 1000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2050,
+      "execution_time": 121.71834802627563,
+      "fitness": 552050
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 3.0,
+        "rho": 0.05,
+        "num_ants": 40,
+        "iterations": 150,
+        "q": 1000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2080,
+      "execution_time": 181.5643298625946,
+      "fitness": 552080
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 3.0,
+        "rho": 0.1,
+        "num_ants": 50,
+        "iterations": 100,
+        "q": 1500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2080,
+      "execution_time": 152.58554100990295,
+      "fitness": 552080
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 4.0,
+        "rho": 0.2,
+        "num_ants": 20,
+        "iterations": 50,
+        "q": 1000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2130,
+      "execution_time": 31.160314083099365,
+      "fitness": 552130
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 3.0,
+        "rho": 0.2,
+        "num_ants": 40,
+        "iterations": 150,
+        "q": 1000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2180,
+      "execution_time": 182.71436715126038,
+      "fitness": 552180
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 2.0,
+        "rho": 0.2,
+        "num_ants": 40,
+        "iterations": 50,
+        "q": 500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2240,
+      "execution_time": 60.86677289009094,
+      "fitness": 552240
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 2.0,
+        "rho": 0.2,
+        "num_ants": 10,
+        "iterations": 150,
+        "q": 2000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2330,
+      "execution_time": 46.246623277664185,
+      "fitness": 552330
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 2.0,
+        "rho": 0.3,
+        "num_ants": 30,
+        "iterations": 100,
+        "q": 2000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2380,
+      "execution_time": 91.10463619232178,
+      "fitness": 552380
+    },
+    {
+      "config": {
+        "alpha": 1.0,
+        "beta": 2.0,
+        "rho": 0.3,
+        "num_ants": 20,
+        "iterations": 150,
+        "q": 500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2490,
+      "execution_time": 91.131174325943,
+      "fitness": 552490
+    },
+    {
+      "config": {
+        "alpha": 1.0,
+        "beta": 2.0,
+        "rho": 0.3,
+        "num_ants": 40,
+        "iterations": 50,
+        "q": 1000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2520,
+      "execution_time": 62.05706596374512,
+      "fitness": 552520
+    },
+    {
+      "config": {
+        "alpha": 0.5,
+        "beta": 1.0,
+        "rho": 0.3,
+        "num_ants": 50,
+        "iterations": 150,
+        "q": 500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 2930,
+      "execution_time": 238.13488745689392,
+      "fitness": 552930
+    },
+    {
+      "config": {
+        "alpha": 1.0,
+        "beta": 1.0,
+        "rho": 0.1,
+        "num_ants": 20,
+        "iterations": 150,
+        "q": 1500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 3320,
+      "execution_time": 93.41189479827881,
+      "fitness": 553320
+    },
+    {
+      "config": {
+        "alpha": 1.5,
+        "beta": 1.0,
+        "rho": 0.05,
+        "num_ants": 50,
+        "iterations": 50,
+        "q": 500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 3370,
+      "execution_time": 78.62628555297852,
+      "fitness": 553370
+    },
+    {
+      "config": {
+        "alpha": 1.5,
+        "beta": 1.0,
+        "rho": 0.3,
+        "num_ants": 30,
+        "iterations": 50,
+        "q": 500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 4040,
+      "execution_time": 45.26616430282593,
+      "fitness": 554040
+    },
+    {
+      "config": {
+        "alpha": 1.5,
+        "beta": 1.0,
+        "rho": 0.3,
+        "num_ants": 50,
+        "iterations": 50,
+        "q": 1000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 4940,
+      "execution_time": 75.95362520217896,
+      "fitness": 554940
+    },
+    {
+      "config": {
+        "alpha": 2.0,
+        "beta": 1.0,
+        "rho": 0.3,
+        "num_ants": 50,
+        "iterations": 100,
+        "q": 1000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 5680,
+      "execution_time": 155.7071614265442,
+      "fitness": 555680
+    },
+    {
+      "config": {
+        "alpha": 1.5,
+        "beta": 4.0,
+        "rho": 0.05,
+        "num_ants": 20,
+        "iterations": 100,
+        "q": 500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 1890,
+      "execution_time": 62.85618758201599,
+      "fitness": 571890
+    },
+    {
+      "config": {
+        "alpha": 1.0,
+        "beta": 4.0,
+        "rho": 0.2,
+        "num_ants": 10,
+        "iterations": 50,
+        "q": 500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 1930,
+      "execution_time": 16.06544828414917,
+      "fitness": 571930
+    },
+    {
+      "config": {
+        "alpha": 1.5,
+        "beta": 3.0,
+        "rho": 0.05,
+        "num_ants": 20,
+        "iterations": 150,
+        "q": 1500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 1960,
+      "execution_time": 92.86882996559143,
+      "fitness": 571960
+    },
+    {
+      "config": {
+        "alpha": 2.0,
+        "beta": 4.0,
+        "rho": 0.05,
+        "num_ants": 30,
+        "iterations": 100,
+        "q": 1500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 2130,
+      "execution_time": 95.02008008956909,
+      "fitness": 572130
+    },
+    {
+      "config": {
+        "alpha": 2.0,
+        "beta": 4.0,
+        "rho": 0.05,
+        "num_ants": 50,
+        "iterations": 50,
+        "q": 2000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 2190,
+      "execution_time": 77.05552744865417,
+      "fitness": 572190
+    },
+    {
+      "config": {
+        "alpha": 2.0,
+        "beta": 3.0,
+        "rho": 0.05,
+        "num_ants": 40,
+        "iterations": 100,
+        "q": 2000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 2360,
+      "execution_time": 129.64375925064087,
+      "fitness": 572360
+    },
+    {
+      "config": {
+        "alpha": 2.0,
+        "beta": 4.0,
+        "rho": 0.1,
+        "num_ants": 30,
+        "iterations": 50,
+        "q": 2000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 2420,
+      "execution_time": 47.42845582962036,
+      "fitness": 572420
+    },
+    {
+      "config": {
+        "alpha": 2.0,
+        "beta": 2.0,
+        "rho": 0.2,
+        "num_ants": 30,
+        "iterations": 150,
+        "q": 1000
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 3010,
+      "execution_time": 143.1681923866272,
+      "fitness": 573010
+    },
+    {
+      "config": {
+        "alpha": 1.5,
+        "beta": 2.0,
+        "rho": 0.2,
+        "num_ants": 10,
+        "iterations": 150,
+        "q": 1500
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 3130,
+      "execution_time": 48.34418058395386,
+      "fitness": 573130
+    }
+  ],
+  "pso": [
+    {
+      "config": {
+        "swarm_size": 100,
+        "max_iterations": 200,
+        "w": 0.4,
+        "c1": 1.5,
+        "c2": 2.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 5150,
+      "execution_time": 8.858141422271729,
+      "fitness": 555150
+    },
+    {
+      "config": {
+        "swarm_size": 70,
+        "max_iterations": 200,
+        "w": 0.4,
+        "c1": 2.0,
+        "c2": 1.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 5650,
+      "execution_time": 6.067263603210449,
+      "fitness": 555650
+    },
+    {
+      "config": {
+        "swarm_size": 70,
+        "max_iterations": 100,
+        "w": 0.4,
+        "c1": 2.0,
+        "c2": 1.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 6100,
+      "execution_time": 3.024482488632202,
+      "fitness": 556100
+    },
+    {
+      "config": {
+        "swarm_size": 100,
+        "max_iterations": 150,
+        "w": 0.6,
+        "c1": 1.0,
+        "c2": 1.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 6100,
+      "execution_time": 6.823367118835449,
+      "fitness": 556100
+    },
+    {
+      "config": {
+        "swarm_size": 70,
+        "max_iterations": 150,
+        "w": 0.8,
+        "c1": 0.5,
+        "c2": 1.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 6250,
+      "execution_time": 4.547067165374756,
+      "fitness": 556250
+    },
+    {
+      "config": {
+        "swarm_size": 30,
+        "max_iterations": 200,
+        "w": 0.8,
+        "c1": 0.5,
+        "c2": 1.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 6820,
+      "execution_time": 2.70292067527771,
+      "fitness": 556820
+    },
+    {
+      "config": {
+        "swarm_size": 70,
+        "max_iterations": 200,
+        "w": 0.75,
+        "c1": 2.0,
+        "c2": 1.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 6840,
+      "execution_time": 6.1070921421051025,
+      "fitness": 556840
+    },
+    {
+      "config": {
+        "swarm_size": 100,
+        "max_iterations": 150,
+        "w": 0.6,
+        "c1": 2.0,
+        "c2": 0.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 7170,
+      "execution_time": 6.660722970962524,
+      "fitness": 557170
+    },
+    {
+      "config": {
+        "swarm_size": 100,
+        "max_iterations": 200,
+        "w": 0.8,
+        "c1": 2.0,
+        "c2": 0.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 7440,
+      "execution_time": 8.84365177154541,
+      "fitness": 557440
+    },
+    {
+      "config": {
+        "swarm_size": 100,
+        "max_iterations": 100,
+        "w": 0.8,
+        "c1": 1.0,
+        "c2": 2.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 7640,
+      "execution_time": 4.542017459869385,
+      "fitness": 557640
+    },
+    {
+      "config": {
+        "swarm_size": 20,
+        "max_iterations": 100,
+        "w": 0.8,
+        "c1": 1.0,
+        "c2": 1.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 7720,
+      "execution_time": 0.8449647426605225,
+      "fitness": 557720
+    },
+    {
+      "config": {
+        "swarm_size": 100,
+        "max_iterations": 200,
+        "w": 0.4,
+        "c1": 0.5,
+        "c2": 1.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 7820,
+      "execution_time": 9.248684167861938,
+      "fitness": 557820
+    },
+    {
+      "config": {
+        "swarm_size": 70,
+        "max_iterations": 200,
+        "w": 0.9,
+        "c1": 1.5,
+        "c2": 1.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 7860,
+      "execution_time": 6.20772123336792,
+      "fitness": 557860
+    },
+    {
+      "config": {
+        "swarm_size": 50,
+        "max_iterations": 150,
+        "w": 0.8,
+        "c1": 1.5,
+        "c2": 0.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 7930,
+      "execution_time": 3.2594170570373535,
+      "fitness": 557930
+    },
+    {
+      "config": {
+        "swarm_size": 30,
+        "max_iterations": 150,
+        "w": 0.8,
+        "c1": 2.0,
+        "c2": 1.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 7940,
+      "execution_time": 1.9918408393859863,
+      "fitness": 557940
+    },
+    {
+      "config": {
+        "swarm_size": 30,
+        "max_iterations": 150,
+        "w": 0.75,
+        "c1": 2.0,
+        "c2": 1.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 8030,
+      "execution_time": 2.055399179458618,
+      "fitness": 558030
+    },
+    {
+      "config": {
+        "swarm_size": 30,
+        "max_iterations": 200,
+        "w": 0.9,
+        "c1": 2.0,
+        "c2": 1.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 8250,
+      "execution_time": 2.6566827297210693,
+      "fitness": 558250
+    },
+    {
+      "config": {
+        "swarm_size": 100,
+        "max_iterations": 200,
+        "w": 0.9,
+        "c1": 1.0,
+        "c2": 2.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 8410,
+      "execution_time": 8.985889911651611,
+      "fitness": 558410
+    },
+    {
+      "config": {
+        "swarm_size": 50,
+        "max_iterations": 200,
+        "w": 0.75,
+        "c1": 1.5,
+        "c2": 2.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 8450,
+      "execution_time": 4.492249488830566,
+      "fitness": 558450
+    },
+    {
+      "config": {
+        "swarm_size": 50,
+        "max_iterations": 100,
+        "w": 0.75,
+        "c1": 2.0,
+        "c2": 1.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 8610,
+      "execution_time": 2.2013611793518066,
+      "fitness": 558610
+    },
+    {
+      "config": {
+        "swarm_size": 20,
+        "max_iterations": 150,
+        "w": 0.75,
+        "c1": 2.0,
+        "c2": 2.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 8900,
+      "execution_time": 1.3364708423614502,
+      "fitness": 558900
+    },
+    {
+      "config": {
+        "swarm_size": 100,
+        "max_iterations": 200,
+        "w": 0.8,
+        "c1": 2.0,
+        "c2": 2.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 8990,
+      "execution_time": 9.02147650718689,
+      "fitness": 558990
+    },
+    {
+      "config": {
+        "swarm_size": 30,
+        "max_iterations": 150,
+        "w": 0.9,
+        "c1": 1.5,
+        "c2": 1.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 9180,
+      "execution_time": 2.043186902999878,
+      "fitness": 559180
+    },
+    {
+      "config": {
+        "swarm_size": 50,
+        "max_iterations": 200,
+        "w": 0.9,
+        "c1": 2.0,
+        "c2": 2.0
+      },
+      "scheduled_tasks": 100,
+      "makespan": 550,
+      "total_cost": 9410,
+      "execution_time": 4.549882173538208,
+      "fitness": 559410
+    },
+    {
+      "config": {
+        "swarm_size": 20,
+        "max_iterations": 100,
+        "w": 0.4,
+        "c1": 0.5,
+        "c2": 0.5
+      },
+      "scheduled_tasks": 100,
+      "makespan": 570,
+      "total_cost": 9620,
+      "execution_time": 0.8794469833374023,
+      "fitness": 579620
+    }
+  ]
+}
